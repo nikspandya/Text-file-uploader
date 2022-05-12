@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Longest Lines</title>
+</head>
+
+<body>
+  <h2>20 Longest lines of latest uploaded file:</h2><br />
+  <h3>Note: If file contains less than 20 lines then all lines are shown and
+    (no lines are shown if previously uploaded file is empty) </h3>
+  
+    {% for item in data %}
+  <p> {{ item }} </p>
+  {% endfor %}
+</body>
+
+</html>
