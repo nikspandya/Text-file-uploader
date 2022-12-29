@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Longest Lines</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Longest Lines</title>
-</head>
+  <body>
+    <h2>100 Longest lines of latest uploaded file:</h2>
+    <br />
+    <h3>
+      Note: if all files contain less than 100 lines then all lines are shown
+    </h3>
 
-<body>
-  <h2>100 Longest lines of latest uploaded file:</h2><br/>
-  <h3>Note: if all files contain less than 100 lines then all lines are shown</h3>
- 
-  {% for item in data %}
-  <p> {{ item }} </p>
-  {% endfor %}
-</body>
-
+    {% for item in data %}
+    <p>{{ item }}</p>
+    {% endfor %}
+  </body>
 </html>

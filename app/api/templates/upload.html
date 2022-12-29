@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+  <title>Upload File</title>
 
-<title>Upload File</title>
-
-<body>
+  <body>
     <h1>Upload File</h1>
     <h3>Please upload text file only</h3>
-    <form action="{{(url_for('uploaded_file'))}}" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" />
-        <input type=submit value=Upload>
+    <form
+      action="{{(url_for('uploaded_files'))}}"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input type="file" name="file" />
+      <input type="submit" value="Upload" />
     </form>
-</body>
-
+  </body>
 </html>
